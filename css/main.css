@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav{
+    overflow: hidden;
+    padding: 4vh;
+    background: #6600cc;
+}
+
+.logo{
+    margin: 0 40vh 0 0;
+    color: #fff;
+}
+
+.topnav a{
+    margin: 0 4vh 0 0;
+    text-decoration: none;
+    color: rgba(204, 204, 204, 0.5);
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.topnav a:hover{
+    color: rgba(204, 204, 204, 1);
+    transition: all 0.5s ease-out;
+}
+
+.active{
+    color: rgba(204, 204, 204, 1)!important;
+}
+
+.help{
+    float: right;
+}
+
+main{
+    display:flex;
+}
+
+.user-bar{
+    flex:2;
+    background: #dddddd;
+}
+
+.user-info{
+    background: #6600cc;
+    /*height:50vh;*/
+    padding: 20px 0 20px 0;
+}
+
+.user-photo{
+    background: url("../img/portrait-xl.jpg");
+    border-radius: 50%;
+    border: 2px solid rgb(204, 204, 204);
+    width: 	213px;
+    height: 213px;
+    margin: auto;
+}
+
+.user-options{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.user-options div{
+    padding: 5px 0;
+}
+
+.user-options div a{
+    font-size: .8rem;
+    color: rgba(204, 204, 204, 0.5);
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+}
+
+.user-options div a:hover{
+    color: rgba(204, 204, 204, 1);
+    transition: all 0.5s ease-out;
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+}
+
+
+
+.main-bar{
+    flex:7;
+    height: 100vh;
+}
+
+.opt-bar{
+    flex:1;
+    background: #dddddd;
+}
+
+.opt-info{
+    background: #6600cc;
+    height:40vh;
+}
+
+/*small*/
+@media screen and (max-width: 500px){
+
+}
+
+/*medium*/
+
+@media screen and (max-width: 960px){
+    .topnav a{
+        font-size: 0.4rem;
+    }
+
+    .user-photo{
+        background: url("../img/portrait-small.jpg");
+        width: 	107px;
+        height: 107px;
+    }
+
+    .user-options div a{
+        font-size: .4rem;
+    }
+}
+
+
+/*large*/
+
+@media screen and  (min-width: 960px) and (max-width: 1250px){
+    .topnav a{
+        font-size: 0.6rem;
+    }
+
+    .user-photo{
+        background: url("../img/portrait-l.jpg");
+        width: 	150px;
+        height: 150px;
+    }
+
+    .user-options div a{
+        font-size: .6rem;
+    }
+}
+
+
+/*extra large*/
+@media screen and (min-width: 1250px){
+
+}
+
