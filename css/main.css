@@ -1,17 +1,41 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background: #DDD;
 }
 
-.topnav{
-    overflow: hidden;
-    padding: 4vh;
+header{
+    display: flex;
+    flex-direction: column;
     background: #6600cc;
+    z-index: 1;
+
+}
+
+.first-row{
+    flex:1;
+    display: flex;
 }
 
 .logo{
-    margin: 0 40vh 0 0;
-    color: #fff;
+    display: inline-block;
+    flex: 2;
+}
+
+.logo img{
+    display: block;
+    margin: 20px auto;
+    width: 170px;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.topnav{
+    display: inline-block;
+    margin: auto ;
+    overflow: hidden;
+    flex: 8;
 }
 
 .topnav a{
@@ -32,22 +56,17 @@ body {
     color: rgba(204, 204, 204, 1)!important;
 }
 
-.help{
-    float: right;
-}
-
-main{
-    display:flex;
+.second-column{
+    flex:1;
+    display: flex;
+    background: #6600cc;
 }
 
 .user-bar{
     flex:2;
-    background: #dddddd;
 }
 
 .user-info{
-    background: #6600cc;
-    /*height:50vh;*/
     padding: 20px 0 20px 0;
 }
 
@@ -58,6 +77,12 @@ main{
     width: 	213px;
     height: 213px;
     margin: auto;
+}
+
+.user-name{
+    color: rgb(204, 204, 204);
+    margin: 20px 0 0 0;
+    text-align: center;
 }
 
 .user-options{
@@ -83,22 +108,18 @@ main{
     border-bottom: 1px solid rgba(204, 204, 204, 1);
 }
 
-
-
 .main-bar{
     flex:7;
-    height: 100vh;
 }
 
 .opt-bar{
     flex:1;
-    background: #dddddd;
 }
 
-.opt-info{
-    background: #6600cc;
-    height:40vh;
+main{
+
 }
+
 
 /*small*/
 @media screen and (max-width: 500px){
@@ -107,7 +128,7 @@ main{
 
 /*medium*/
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1060px){
     .topnav a{
         font-size: 0.4rem;
     }
@@ -121,12 +142,16 @@ main{
     .user-options div a{
         font-size: .4rem;
     }
+
+    .logo img{
+        width: 100px;
+    }
 }
 
 
 /*large*/
 
-@media screen and  (min-width: 960px) and (max-width: 1250px){
+@media screen and  (min-width: 1060px) and (max-width: 1330px){
     .topnav a{
         font-size: 0.6rem;
     }
@@ -139,6 +164,10 @@ main{
 
     .user-options div a{
         font-size: .6rem;
+    }
+
+    .logo img{
+        width: 140px;
     }
 }
 
