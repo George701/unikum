@@ -12,7 +12,7 @@ header{
 
 }
 
-.first-row{
+.first-column{
     flex:1;
     display: flex;
 }
@@ -59,7 +59,8 @@ header{
 .second-column{
     flex:1;
     display: flex;
-    background: #6600cc;
+    /*background: #6600cc;*/
+    background: linear-gradient(to top, #DDD, #6600cc);
 }
 
 .user-bar{
@@ -96,16 +97,16 @@ header{
 
 .user-options div a{
     font-size: .8rem;
-    color: rgba(204, 204, 204, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     padding: 5px 0;
-    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .user-options div a:hover{
-    color: rgba(204, 204, 204, 1);
+    color: rgb(255, 255, 255);
     transition: all 0.5s ease-out;
-    border-bottom: 1px solid rgba(204, 204, 204, 1);
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .main-bar{
@@ -117,9 +118,70 @@ header{
 }
 
 main{
-
+    position:absolute;
+    top: 0;
+    transform: translate(30%, 15%);
+    background: #FFF;
+    width: 70%;
+    min-height: 100vh;
+    z-index: 2;
+    border-radius: 50px;
 }
 
+footer{
+    /*position: absolute;*/
+    left: 0;
+    right:0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #DDD, #6600cc);
+    color: #fff;
+    /*z-index: 3;*/
+    margin-top: 65vh;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 4rem;
+}
+
+.footer-nav{
+    flex: 1;
+}
+
+.footer-nav div a{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.footer-nav div a:hover{
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease-out;
+}
+
+.footer-brand{
+    flex:1;
+    text-align: right;
+}
+
+.footer-brand div a{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    margin: 0.3rem 0 0 0;
+    /*cursor: pointer;*/
+}
+
+.footer-brand div a:hover{
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.5s ease-out;
+}
+
+footer span{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
 
 /*small*/
 @media screen and (max-width: 500px){
