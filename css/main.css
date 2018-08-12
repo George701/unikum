@@ -26,7 +26,6 @@ header{
     display: block;
     margin: 20px auto;
     width: 170px;
-    border: 2px solid rgb(204, 204, 204);
     border-radius: 3px;
     cursor: pointer;
 }
@@ -116,16 +115,69 @@ header{
 .opt-bar{
     flex:1;
 }
-
+/*
+=======================================================================
+    Main Content
+=======================================================================
+*/
 main{
     position:absolute;
     top: 0;
-    transform: translate(30%, 15%);
+    transform: translate(26%, 15%);
     background: #FFF;
     width: 70%;
     min-height: 100vh;
     z-index: 2;
     border-radius: 50px;
+    padding: 40px;
+
+}
+
+.main-header{
+    height: 20vh;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.hd-brand{
+    flex:1;
+    width: 100%;
+    height: 100%;
+}
+
+.title-sign{
+    text-align: center;
+    color: #6600cc;
+    font-weight: bold;
+    font-size: 9rem;
+}
+
+.hd-title{
+    flex:3;
+    text-align: center;
+    color: #6600cc;
+}
+
+.hd-divider{
+    position:relative;
+    display:block;
+    left: 10%;
+    width:80%;
+    border-bottom: 3px solid #6600cc;
+}
+
+.main-body{
+    min-height: 60vh;
+    width:100%;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+
+.main-footer{
+    height: 20vh;
+    width:100%;
 }
 
 footer{
@@ -235,7 +287,9 @@ footer span{
 
 
 /*extra large*/
-@media screen and (min-width: 1250px){
+@media screen and (min-width: 1330px){
+    .title-sign{
 
+    }
 }
 
