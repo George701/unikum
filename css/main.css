@@ -7,7 +7,7 @@ body {
 header{
     display: flex;
     flex-direction: column;
-    background: #6600cc;
+    background: #0d47a1;
     z-index: 1;
 
 }
@@ -16,6 +16,7 @@ header{
     flex:1;
     display: flex;
 }
+
 
 .logo{
     display: inline-block;
@@ -32,34 +33,32 @@ header{
 
 .topnav{
     display: inline-block;
-    margin: auto ;
-    overflow: hidden;
+    margin: 8vh 0 0 0;
     flex: 8;
 }
 
 .topnav a{
-    margin: 0 4vh 0 0;
+    padding: 25px 20px;
     text-decoration: none;
-    color: rgba(204, 204, 204, 0.5);
+    color: rgba(227, 242, 253, 0.5);
     font-weight: bold;
     font-size: 0.8rem;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .topnav a:hover{
-    color: rgba(204, 204, 204, 1);
+    color: rgba(227, 242, 253, 1);
     transition: all 0.5s ease-out;
 }
 
 .active{
-    color: rgba(204, 204, 204, 1)!important;
+    color: rgba(227, 242, 253, 1)!important;
 }
 
 .second-column{
     flex:1;
     display: flex;
-    /*background: #6600cc;*/
-    background: linear-gradient(to top, #DDD, #6600cc);
 }
 
 .user-bar{
@@ -71,18 +70,21 @@ header{
 }
 
 .user-photo{
-    background: url("../img/portrait-xl.jpg");
+    /*TODO: height photo 150px*/
+    background: url("../img/portrait-l.jpg");
     border-radius: 50%;
-    border: 2px solid rgb(204, 204, 204);
-    width: 	213px;
-    height: 213px;
+    border: 2px solid rgb(227, 242, 253);
+    width: 	150px;
+    height: 150px;
     margin: auto;
 }
 
 .user-name{
-    color: rgb(204, 204, 204);
+    color: rgb(227, 242, 253);
     margin: 20px 0 0 0;
     text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 .user-options{
@@ -96,16 +98,16 @@ header{
 
 .user-options div a{
     font-size: .8rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(227, 242, 253, 0.5);
     text-decoration: none;
     padding: 5px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(227, 242, 253, 0.5);
 }
 
 .user-options div a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(227, 242, 253);
     transition: all 0.5s ease-out;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(227, 242, 253);
 }
 
 .main-bar{
@@ -120,6 +122,9 @@ header{
     Main Content
 =======================================================================
 */
+
+/*TODO: without position absolute
+TODO: transform: translateY(-400%)*/
 main{
     position:absolute;
     top: 0;
@@ -128,7 +133,7 @@ main{
     width: 70%;
     min-height: 100vh;
     z-index: 2;
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 40px;
 
 }
@@ -180,15 +185,14 @@ main{
     width:100%;
 }
 
+/*TODO: little icons small font*/
 footer{
-    /*position: absolute;*/
     left: 0;
     right:0;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(to bottom, #DDD, #6600cc);
+    background: #0d47a1;
     color: #fff;
-    /*z-index: 3;*/
     margin-top: 65vh;
 }
 
@@ -200,6 +204,7 @@ footer{
 
 .footer-nav{
     flex: 1;
+    font-size: .9rem;
 }
 
 .footer-nav div a{
@@ -221,7 +226,7 @@ footer{
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     margin: 0.3rem 0 0 0;
-    /*cursor: pointer;*/
+    font-size: 1.5rem;
 }
 
 .footer-brand div a:hover{
@@ -257,8 +262,24 @@ footer span{
         font-size: .4rem;
     }
 
+    .user-name{
+        font-size: 1.2rem;
+    }
+
     .logo img{
         width: 100px;
+    }
+
+    .footer-nav{
+        font-size: .5rem;
+    }
+
+    .footer-brand div a{
+        font-size: .9rem;
+    }
+
+    .topnav{
+        margin: 5vh 0 0 0;
     }
 }
 
@@ -271,17 +292,33 @@ footer span{
     }
 
     .user-photo{
-        background: url("../img/portrait-l.jpg");
-        width: 	150px;
-        height: 150px;
+        background: url("../img/portrait-small.jpg");
+        width: 	107px;
+        height: 107px;
     }
 
     .user-options div a{
         font-size: .6rem;
     }
 
+    .user-name{
+        font-size: 1.6rem;
+    }
+
     .logo img{
         width: 140px;
+    }
+
+    .footer-nav{
+        font-size: .7rem;
+    }
+
+    .footer-brand div a{
+        font-size: 1.2rem;
+    }
+
+    .topnav{
+        margin: 6vh 0 0 0;
     }
 }
 
