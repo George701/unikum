@@ -5,15 +5,11 @@ body {
 }
 
 header{
-    display: flex;
-    flex-direction: column;
     background: #0d47a1;
-    z-index: 1;
 
 }
 
-.first-column{
-    flex:1;
+.header-container{
     display: flex;
 }
 
@@ -55,14 +51,22 @@ header{
 .active{
     color: rgba(227, 242, 253, 1)!important;
 }
-
-.second-column{
-    flex:1;
+/*
+=======================================================================
+    Main Content
+=======================================================================
+*/
+main{
     display: flex;
+    /*background: #0d47a1;*/
 }
 
 .user-bar{
-    flex:2;
+    flex: 2;
+    /*flex: 2 2 150px;*/
+    height: 350px;
+    background: #0d47a1;
+
 }
 
 .user-info{
@@ -70,7 +74,6 @@ header{
 }
 
 .user-photo{
-    /*TODO: height photo 150px*/
     background: url("../img/portrait-l.jpg");
     border-radius: 50%;
     border: 2px solid rgb(227, 242, 253);
@@ -112,80 +115,20 @@ header{
 
 .main-bar{
     flex:7;
+    margin-top: -21px;
+}
+
+.main-container{
+    background: white;
+    height: 1000px;
 }
 
 .opt-bar{
     flex:1;
-}
-/*
-=======================================================================
-    Main Content
-=======================================================================
-*/
-
-/*TODO: without position absolute
-TODO: transform: translateY(-400%)*/
-main{
-    position:absolute;
-    top: 0;
-    transform: translate(26%, 15%);
-    background: #FFF;
-    width: 70%;
-    min-height: 100vh;
-    z-index: 2;
-    border-radius: 10px;
-    padding: 40px;
-
+    height: 350px;
+    background: #0d47a1;
 }
 
-.main-header{
-    height: 20vh;
-    width:100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.hd-brand{
-    flex:1;
-    width: 100%;
-    height: 100%;
-}
-
-.title-sign{
-    text-align: center;
-    color: #6600cc;
-    font-weight: bold;
-    font-size: 9rem;
-}
-
-.hd-title{
-    flex:3;
-    text-align: center;
-    color: #6600cc;
-}
-
-.hd-divider{
-    position:relative;
-    display:block;
-    left: 10%;
-    width:80%;
-    border-bottom: 3px solid #6600cc;
-}
-
-.main-body{
-    min-height: 60vh;
-    width:100%;
-    border-bottom: 1px solid black;
-    padding: 10px;
-}
-
-
-.main-footer{
-    height: 20vh;
-    width:100%;
-}
-
-/*TODO: little icons small font*/
 footer{
     left: 0;
     right:0;
