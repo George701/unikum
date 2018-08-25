@@ -29,7 +29,7 @@ header{
 
 .topnav{
     display: inline-block;
-    margin: 4vh 0 0 0;
+    margin: 4vh 0 4vh 0;
     flex: 8;
 }
 
@@ -41,6 +41,7 @@ header{
     font-size: 0.8rem;
     text-transform: uppercase;
     cursor: pointer;
+    /*border: 1px solid #FFF;*/
 }
 
 .topnav a:hover{
@@ -52,16 +53,18 @@ header{
     color: rgba(227, 242, 253, 1)!important;
 }
 
-.nav-options{
-
-}
+/*TODO: needed to realize why icons goes under the nav list when its float = right*/
 
 #messages{
-    font-size: 2rem;
+    font-size: 2.8rem;
+    padding: 10px;
+    float:right;
 }
 
 #signout{
-    font-size: 2rem;
+    font-size: 2.8rem;
+    padding: 10px;
+    float:right;
 }
 
 .head-options{
@@ -290,7 +293,7 @@ footer span{
     }
 
     .topnav{
-        margin: 5vh 0 0 0;
+        margin: 5vh 0 5vh 0;
     }
 
     .widgets{
@@ -334,7 +337,7 @@ footer span{
     }
 
     .topnav{
-        margin: 6vh 0 0 0;
+        margin: 6vh 0 6vh 0;
     }
 
     .widgets{
