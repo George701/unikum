@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #DDD;
+}
+
+form{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    min-height: 100px;
+    min-width: 100px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.logo{
+    flex: 1;
+    margin: auto;
+    padding: 10px 0 20px 0;
+
+}
+.logo img{
+    width: 100px;
+}
+
+.form-options{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    color: #0d47a1;
+}
+
+.form-options label{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.form-options input{
+    border: 2px solid #DDD;
+    padding: 5px;
+    margin: 0 0 20px 0;
+    width: 400px;
+}
+
+#pass{
+    margin-bottom: 20px;
+}
+
+.optional-panel{
+    display: flex;
+    flex-direction: row;
+}
+
+.rmmbr-pass{
+    flex: 1;
+    display: block;
+    float:left;
+    position:relative;
+}
+
+.rmmbr-pass input{
+    /*position: absolute;*/
+}
+
+.rmmbr-pass span{
+    color: #999999;
+    font-size: 17px;
+}
+
+.frgt-pass{
+    flex: 1;
+    text-align: right;
+}
+
+.frgt-pass a{
+    color: #999999;
+}
+
+.frgt-pass a:hover{
+    transition: all 0.5s ease-out;
+    color: #DDD;
+}
+
+#access{
+    background: #0d47a1;
+    color: #E3F2FD;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    margin: 20px auto 0 auto;
+    cursor: pointer;
+}
+
+#access:hover{
+    background: #0d58e8;
+    color: #FFF;
+    transition: all 0.5s ease-out;
+}
