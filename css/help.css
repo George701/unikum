@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #DDD;
+}
+
+
+/*
+=======================================================================
+    Header
+=======================================================================
+*/
+header{
+    background: #0d47a1;
+
+}
+
+.header-container{
+    display: flex;
+}
+
+
+.logo{
+    display: inline-block;
+    flex: 2;
+}
+
+.logo img{
+    display: block;
+    margin: 20px auto;
+    width: 170px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.topnav{
+    display: inline-block;
+    margin: 4vh 0 4vh 0;
+    flex: 8;
+}
+
+.topnav a{
+    padding: 25px 20px;
+    text-decoration: none;
+    color: rgba(227, 242, 253, 0.5);
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    /*border: 1px solid #FFF;*/
+}
+
+.topnav a:hover{
+    color: rgba(227, 242, 253, 1);
+    transition: all 0.5s ease-out;
+}
+
+.active{
+    color: rgba(227, 242, 253, 1)!important;
+}
+
+/*TODO: needed to realize why icons goes under the nav list when its float = right*/
+
+#messages{
+    font-size: 2.8rem;
+    padding: 10px;
+    float:right;
+}
+
+#signout{
+    font-size: 2.8rem;
+    padding: 10px;
+    float:right;
+}
+
+.head-options{
+    flex:1;
+}
+/*
+=======================================================================
+    Main Content
+=======================================================================
+*/
+
+main{
+    display: flex;
+}
+
+.user-bar{
+    flex: 2;
+    height: 350px;
+    background: #0d47a1;
+}
+
+
+.widgets{
+    margin-top: 20px;
+    padding: 20px;
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.w-item{
+    width: 100px;
+    background: #0d47a1;
+    text-align: center;
+    padding: 40px 0;
+    margin: 10px;
+    color: #E3F2FD;
+    cursor: pointer;
+}
+
+.w-item:hover{
+    transition: all 0.5s ease-out;
+    background: #0d58e8;
+}
+
+.main-bar{
+    background: #FFF;
+    flex:7;
+    padding: 20px 40px;
+    min-height: 1000px;
+    color: #0d47a1;
+}
+
+.panel-title > a{
+    color: #0d47a1;
+    text-decoration: none;
+}
+
+.panel-heading:hover{
+    background: rgba(13, 71, 161, 0.5);
+}
+
+.panel-heading:focus{
+    background: rgba(13, 71, 161, 1);
+    color: #E3F2FD!important;
+}
+
+
+.opt-bar{
+    flex:1;
+    height: 350px;
+    background: #0d47a1;
+}
+
+/*
+=======================================================================
+    Footer
+=======================================================================
+*/
+footer{
+    left: 0;
+    right:0;
+    bottom: 0;
+    width: 100%;
+    background: #0d47a1;
+    color: #fff;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 4rem;
+}
+
+.footer-nav{
+    flex: 1;
+    font-size: .9rem;
+}
+
+.footer-nav div a{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.footer-nav div a:hover{
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease-out;
+}
+
+.footer-brand{
+    flex:1;
+    text-align: right;
+}
+
+.footer-brand div a{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    margin: 0.3rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+.footer-brand div a:hover{
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.5s ease-out;
+}
+
+footer span{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*small*/
+@media screen and (max-width: 500px){
+
+}
+
+/*medium*/
+
+@media screen and (max-width: 1060px){
+    .topnav a{
+        font-size: 1rem;
+    }
+
+    .user-photo{
+        background: url("../img/portrait-small.jpg");
+        width: 	107px;
+        height: 107px;
+    }
+
+    .user-options div a{
+        font-size: .4rem;
+    }
+
+    .user-name{
+        font-size: 1.2rem;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+    .footer-nav{
+        font-size: .5rem;
+    }
+
+    .footer-brand div a{
+        font-size: .9rem;
+    }
+
+    .topnav{
+        margin: 5vh 0 5vh 0;
+    }
+
+    .widgets{
+        margin-top: 100px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/*large*/
+
+@media screen and  (min-width: 1060px) and (max-width: 1330px){
+    .topnav a{
+        font-size: 1.2rem;
+    }
+
+    .user-photo{
+        background: url("../img/portrait-small.jpg");
+        width: 	107px;
+        height: 107px;
+    }
+
+    .user-options div a{
+        font-size: .6rem;
+    }
+
+    .user-name{
+        font-size: 1.6rem;
+    }
+
+    .logo img{
+        width: 140px;
+    }
+
+    .footer-nav{
+        font-size: .7rem;
+    }
+
+    .footer-brand div a{
+        font-size: 1.2rem;
+    }
+
+    .topnav{
+        margin: 6vh 0 6vh 0;
+    }
+
+    .widgets{
+        margin-top: 60px;
+    }
+}
+
+
+/*extra large*/
+@media screen and (min-width: 1330px){
+    .title-sign{
+
+    }
+}
