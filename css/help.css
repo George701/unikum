@@ -44,7 +44,7 @@ header{
     text-decoration: none;
     color: rgba(227, 242, 253, 0.5);
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     cursor: pointer;
     /*border: 1px solid #FFF;*/
@@ -57,6 +57,7 @@ header{
 
 .active{
     color: rgba(227, 242, 253, 1)!important;
+    background: #0d47a1!important;
 }
 
 /*TODO: needed to realize why icons goes under the nav list when its float = right*/
@@ -124,20 +125,37 @@ main{
     color: #0d47a1;
 }
 
-.panel-title > a{
-    color: #0d47a1;
-    text-decoration: none;
+.accordion {
+    background: #FFF;
+    border-radius: 5px;
+    border: 1px solid #0d47a1;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin: 0 0 20px 0;
 }
 
-.panel-heading:hover{
+/*.active, .accordion:hover {*/
+    /*background-color: #ccc;*/
+/*}*/
+.accordion:hover {
     background: rgba(13, 71, 161, 0.5);
+    color: #E3F2FD;
+    transition: all 0.5s ease-out;
 }
 
-.panel-heading:focus{
-    background: rgba(13, 71, 161, 1);
-    color: #E3F2FD!important;
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
 }
-
 
 .opt-bar{
     flex:1;
@@ -212,7 +230,7 @@ footer span{
 
 @media screen and (max-width: 1060px){
     .topnav a{
-        font-size: 1rem;
+        font-size: 0.4rem;
     }
 
     .user-photo{
@@ -256,7 +274,7 @@ footer span{
 
 @media screen and  (min-width: 1060px) and (max-width: 1330px){
     .topnav a{
-        font-size: 1.2rem;
+        font-size: 0.6rem;
     }
 
     .user-photo{
